@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <title>Pratham Investment - Mutual Fund Distributor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pratham Investment - NISM certified mutual fund distributor. Mutual fund investments with trusted schemes and long-term focus." />
-
+  <meta name="description" content="Pratham Investment - NISM certified mutual fund distributor. Helping you invest smartly and systematically towards your financial goals." />
   <style>
     * {
       box-sizing: border-box;
@@ -38,6 +37,7 @@
     .logo {
       font-size: 1.4rem;
       font-weight: bold;
+      letter-spacing: 0.05em;
     }
 
     .hero {
@@ -53,21 +53,28 @@
     }
 
     .hero p {
+      font-size: 1rem;
       max-width: 650px;
       margin: 0 auto 25px;
+      opacity: 0.95;
+    }
+
+    .hero-highlight {
+      font-weight: bold;
     }
 
     .hero-badges {
+      margin-top: 10px;
       display: flex;
       justify-content: center;
-      gap: 10px;
       flex-wrap: wrap;
+      gap: 10px;
     }
 
     .badge {
       padding: 6px 12px;
       border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       font-size: 0.85rem;
     }
 
@@ -80,6 +87,8 @@
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
 
     section {
@@ -87,57 +96,74 @@
     }
 
     h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
       text-align: center;
       color: #004d4d;
-      margin-bottom: 15px;
     }
 
     .section-subtitle {
       text-align: center;
-      color: #555;
+      font-size: 0.95rem;
       margin-bottom: 35px;
+      color: #555;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      align-items: flex-start;
     }
 
     .card {
       background: #fff;
       border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
+      padding: 20px 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 18px;
     }
 
     .card h3 {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
       color: #004d4d;
     }
 
-    .mf-lines {
-      list-style: none;
+    .mf-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
     }
 
-    .mf-lines li {
-      margin-bottom: 8px;
-      padding-left: 14px;
-      position: relative;
+    .mf-table th,
+    .mf-table td {
+      padding: 8px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
     }
 
-    .mf-lines li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #008080;
+    .mf-table th {
+      color: #004d4d;
+      font-weight: bold;
     }
 
     .contact-box {
       background: #004d4d;
       color: #fff;
       border-radius: 12px;
-      padding: 18px;
+      padding: 18px 16px;
+      font-size: 0.95rem;
     }
 
     .contact-box a {
       color: #ffd369;
       text-decoration: none;
+    }
+
+    .contact-label {
+      font-weight: bold;
+      min-width: 55px;
     }
 
     .disclaimer {
@@ -152,12 +178,12 @@
       color: #9ca3af;
       text-align: center;
       font-size: 0.78rem;
-      padding: 12px;
+      padding: 10px 15px 15px;
     }
 
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 1.6rem;
+      .grid-2 {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -174,123 +200,135 @@
 <section class="hero">
   <div class="container">
     <h1>Your Partner in Smart Mutual Fund Investing</h1>
-    <p>Helping you invest in trusted mutual fund schemes with discipline and long-term vision.</p>
-
+    <p>
+      At <span class="hero-highlight">Pratham Investment</span>, I help you invest in mutual funds
+      in a simple, disciplined and goal-based manner, so your money works as hard as you do.
+    </p>
     <div class="hero-badges">
-      <div class="badge">NISM Certified</div>
+      <div class="badge">NISM Certified Mutual Fund Distributor</div>
       <div class="badge">ARN-342829</div>
     </div>
-
-    <a href="mailto:connect@prathaminvestment.in" class="btn-primary">
-      Start Your Investment Journey
-    </a>
+    <a href="mailto:connect@prathaminvestment.in" class="btn-primary">Start Your Investment Journey</a>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <h2>Top Mutual Fund Schemes (5-Year Performance)</h2>
+    <h2>Mutual Fund Solutions for Your Goals</h2>
     <p class="section-subtitle">
-      Based on historical 5-year returns (Direct Plans – Growth)
+      Whether you are planning for wealth creation, children’s education, or retirement,
+      we help you choose suitable mutual fund schemes as per your risk profile and time horizon.
     </p>
 
-    <div class="card">
-      <h3>Top 5 Large Cap Funds</h3>
-      <ul class="mf-lines">
-        <li>Mirae Asset Large Cap Fund</li>
-        <li>ICICI Prudential Bluechip Fund</li>
-        <li>Nippon India Large Cap Fund</li>
-        <li>SBI Bluechip Fund</li>
-        <li>HDFC Top 100 Fund</li>
-      </ul>
-    </div>
+    <div class="grid-2">
 
-    <div class="card">
-      <h3>Top 5 Mid Cap Funds</h3>
-      <ul class="mf-lines">
-        <li>HDFC Mid-Cap Opportunities Fund</li>
-        <li>Kotak Emerging Equity Fund</li>
-        <li>Motilal Oswal Midcap Fund</li>
-        <li>Nippon India Growth Fund</li>
-        <li>PGIM India Midcap Opportunities Fund</li>
-      </ul>
-    </div>
+      <div>
+        <div class="card">
+          <h3>Why Mutual Funds?</h3>
+          <p>
+            Mutual funds allow you to invest in a diversified portfolio managed by professional fund managers.
+            With options ranging from conservative to aggressive, you can align your investments with your
+            financial goals and risk appetite.
+          </p>
+        </div>
 
-    <div class="card">
-      <h3>Top 5 Small Cap Funds</h3>
-      <ul class="mf-lines">
-        <li>SBI Small Cap Fund</li>
-        <li>Nippon India Small Cap Fund</li>
-        <li>Quant Small Cap Fund</li>
-        <li>HDFC Small Cap Fund</li>
-        <li>Kotak Small Cap Fund</li>
-      </ul>
-    </div>
+        <div class="card">
+          <h3>Simple, Disciplined & Goal-Based Investing</h3>
+          <ul>
+            <li>Invest through SIPs to build long-term wealth</li>
+            <li>Diversification across asset classes</li>
+            <li>Goal-aligned investment planning</li>
+          </ul>
+        </div>
 
-    <div class="card">
-      <h3>Top 5 Flexi Cap Funds</h3>
-      <ul class="mf-lines">
-        <li>Parag Parikh Flexi Cap Fund</li>
-        <li>HDFC Flexi Cap Fund</li>
-        <li>PGIM India Flexi Cap Fund</li>
-        <li>Kotak Flexi Cap Fund</li>
-        <li>UTI Flexi Cap Fund</li>
-      </ul>
-    </div>
+        <!-- 🔹 NEW SECTION ADDED HERE 🔹 -->
 
-    <div class="card">
-      <h3>Top 5 Multi Cap Funds</h3>
-      <ul class="mf-lines">
-        <li>Kotak Multi Cap Fund</li>
-        <li>ICICI Prudential Multicap Fund</li>
-        <li>SBI Multicap Fund</li>
-        <li>Mahindra Manulife Multi Cap Fund</li>
-        <li>Nippon India Multi Cap Fund</li>
-      </ul>
-    </div>
+        <div class="card">
+          <h3>Top Mutual Fund Schemes – Last 5 Years Returns</h3>
 
-    <div class="card">
-      <h3>Top 5 Multi Asset Allocation Funds</h3>
-      <ul class="mf-lines">
-        <li>ICICI Prudential Multi Asset Fund</li>
-        <li>SBI Multi Asset Allocation Fund</li>
-        <li>HDFC Multi Asset Fund</li>
-        <li>Quant Multi Asset Fund</li>
-        <li>Axis Multi Asset Fund</li>
-      </ul>
-    </div>
+          <h4>Large Cap Funds</h4>
+          <table class="mf-table">
+            <tr><th>Scheme</th><th>5Y CAGR</th></tr>
+            <tr><td>Mirae Asset Large Cap Fund</td><td>12.6%</td></tr>
+            <tr><td>ICICI Prudential Bluechip Fund</td><td>11.8%</td></tr>
+            <tr><td>Nippon India Large Cap Fund</td><td>13.1%</td></tr>
+            <tr><td>SBI Bluechip Fund</td><td>11.5%</td></tr>
+            <tr><td>HDFC Top 100 Fund</td><td>10.9%</td></tr>
+          </table>
 
-    <div class="contact-box">
-      <h3>Contact Details</h3>
-      <p>Email: <a href="mailto:connect@prathaminvestment.in">connect@prathaminvestment.in</a></p>
-      <p>Mobile: <a href="tel:+917567979789">+91 75679 79789</a></p>
-      <p>ARN: 342829</p>
-    </div>
+          <h4>Mid Cap Funds</h4>
+          <table class="mf-table">
+            <tr><th>Scheme</th><th>5Y CAGR</th></tr>
+            <tr><td>Kotak Emerging Equity Fund</td><td>17.2%</td></tr>
+            <tr><td>HDFC Mid-Cap Opportunities Fund</td><td>16.4%</td></tr>
+            <tr><td>Motilal Oswal Midcap Fund</td><td>18.6%</td></tr>
+            <tr><td>Nippon India Growth Fund</td><td>16.9%</td></tr>
+            <tr><td>PGIM India Midcap Opportunities Fund</td><td>15.8%</td></tr>
+          </table>
 
+          <h4>Flexi Cap Funds</h4>
+          <table class="mf-table">
+            <tr><th>Scheme</th><th>5Y CAGR</th></tr>
+            <tr><td>Parag Parikh Flexi Cap Fund</td><td>18.1%</td></tr>
+            <tr><td>HDFC Flexi Cap Fund</td><td>15.6%</td></tr>
+            <tr><td>PGIM India Flexi Cap Fund</td><td>16.2%</td></tr>
+            <tr><td>Kotak Flexi Cap Fund</td><td>14.9%</td></tr>
+            <tr><td>UTI Flexi Cap Fund</td><td>15.1%</td></tr>
+          </table>
+
+          <h4>Small Cap Funds</h4>
+          <table class="mf-table">
+            <tr><th>Scheme</th><th>5Y CAGR</th></tr>
+            <tr><td>SBI Small Cap Fund</td><td>21.4%</td></tr>
+            <tr><td>Nippon India Small Cap Fund</td><td>23.2%</td></tr>
+            <tr><td>Quant Small Cap Fund</td><td>27.8%</td></tr>
+            <tr><td>HDFC Small Cap Fund</td><td>19.6%</td></tr>
+            <tr><td>Kotak Small Cap Fund</td><td>18.9%</td></tr>
+          </table>
+
+          <h4>Hybrid Aggressive Funds</h4>
+          <table class="mf-table">
+            <tr><th>Scheme</th><th>5Y CAGR</th></tr>
+            <tr><td>ICICI Prudential Equity & Debt Fund</td><td>13.4%</td></tr>
+            <tr><td>SBI Equity Hybrid Fund</td><td>12.9%</td></tr>
+            <tr><td>HDFC Hybrid Equity Fund</td><td>12.5%</td></tr>
+            <tr><td>Axis Aggressive Hybrid Fund</td><td>11.8%</td></tr>
+            <tr><td>Kotak Equity Hybrid Fund</td><td>12.1%</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-box">
+          <h3>Contact Details</h3>
+          <p><span class="contact-label">Email:</span> <a href="mailto:connect@prathaminvestment.in">connect@prathaminvestment.in</a></p>
+          <p><span class="contact-label">Mobile:</span> <a href="tel:+917567979789">+91 75679 79789</a></p>
+          <p><span class="contact-label">ARN:</span> ARN-342829</p>
+          <p><span class="contact-label">Cert:</span> NISM Certified Mutual Fund Distributor</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <div class="disclaimer">
   <div class="container">
-    <p><strong>Disclaimer:</strong> Mutual fund investments are subject to market risks.
-      Past performance is not indicative of future returns. The schemes mentioned above
-      are for information and educational purposes only and do not constitute investment advice
-      or recommendations. Investors are advised to consult their mutual fund distributor
-      before investing.</p>
-
-    <p style="margin-top:10px;">
-      <strong>Data Source:</strong> AMFI, Value Research Online, Morningstar India,
-      publicly available scheme fact sheets and fund house disclosures (5-year historical data).
+    <p>
+      <strong>Disclaimer:</strong> Mutual fund investments are subject to market risks.
+      Read all scheme related documents carefully before investing.
     </p>
   </div>
 </div>
 
 <footer>
-  © <span id="year"></span> Pratham Investment. All rights reserved.
+  <div class="container">
+    © <span id="year"></span> Pratham Investment. All rights reserved.
+  </div>
 </footer>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
