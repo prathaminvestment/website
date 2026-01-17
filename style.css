@@ -1,0 +1,63 @@
+/* PREMIUM MF SECTION */
+
+.mf-section {
+  background: linear-gradient(135deg, #e6f7f6, #f9fcfc);
+  border-left: 6px solid #008080;
+}
+
+.mf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.premium-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  margin-bottom: 18px;
+}
+
+.mf-desc {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.mf-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #004d4d;
+  font-weight: bold;
+}
+
+.sip-box {
+  background: #004d4d;
+  color: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.sip-box h4 {
+  margin-bottom: 8px;
+}
+
+.sip-box small {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.mf-cta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .mf-grid {
+    grid-template-columns: 1fr;
+  }
+}
