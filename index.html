@@ -1,28 +1,264 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Pratham Investment - Mutual Fund Distributor</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pratham Investment - NISM certified mutual fund distributor helping you invest smartly and systematically towards your financial goals." />
 
-  <!-- LINK TO CSS -->
-  <link rel="stylesheet" href="https://prathaminvestment.in/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 0 15px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #008080, #004d4d);
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #008080, #004d4d);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    .hero-badges {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #ffd369;
+      color: #222;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+
+    section {
+      padding: 55px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004d4d;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 35px;
+      font-size: 0.95rem;
+    }
+
+    /* TOP GRID */
+    .top-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #004d4d;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: #004d4d;
+      color: #fff;
+      border-radius: 14px;
+      padding: 22px;
+      height: fit-content;
+    }
+
+    .contact-box a {
+      color: #ffd369;
+      text-decoration: none;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    /* MF SECTION */
+    .mf-section {
+      background: linear-gradient(135deg, #e6f7f6, #f9fcfc);
+      border-left: 6px solid #008080;
+      border-radius: 16px;
+      padding: 35px;
+    }
+
+    .mf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 20px;
+    }
+
+    .premium-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+      margin-bottom: 18px;
+    }
+
+    .premium-card h4 {
+      color: #004d4d;
+      margin-bottom: 6px;
+    }
+
+    .mf-desc {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .mf-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: #008080;
+      font-weight: bold;
+    }
+
+    .sip-box {
+      background: #004d4d;
+      color: #fff;
+      border-radius: 14px;
+      padding: 22px;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .sip-box h4 {
+      margin-bottom: 10px;
+    }
+
+    .sip-box small {
+      font-size: 0.75rem;
+      opacity: 0.85;
+    }
+
+    .mf-cta {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    /* SOURCE & DISCLAIMER */
+    .source-box {
+      background: #083535;
+      color: #cbd5e1;
+      font-size: 0.8rem;
+      padding: 18px 0;
+      margin-top: 40px;
+    }
+
+    .disclaimer {
+      background: #0f2727;
+      color: #d1d5db;
+      font-size: 0.8rem;
+      padding: 18px 0;
+    }
+
+    footer {
+      background: #041919;
+      color: #9ca3af;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 12px 0;
+    }
+
+    @media (max-width: 768px) {
+      .top-grid,
+      .mf-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="container">
     <div class="logo">Pratham Investment</div>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="container">
     <h1>Your Partner in Smart Mutual Fund Investing</h1>
@@ -42,14 +278,11 @@
   </div>
 </section>
 
-<!-- MAIN CONTENT -->
 <section>
   <div class="container">
 
-    <!-- TOP GRID -->
     <div class="top-grid">
 
-      <!-- LEFT -->
       <div>
         <div class="card">
           <h3>Why Mutual Funds?</h3>
@@ -59,7 +292,7 @@
           </p>
         </div>
 
-        <div class="card" style="margin-top:20px;">
+        <div class="card">
           <h3>Simple, Disciplined & Goal-Based Investing</h3>
           <ul>
             <li>Systematic Investment Plans (SIP)</li>
@@ -69,11 +302,9 @@
         </div>
       </div>
 
-      <!-- RIGHT CONTACT -->
       <div class="contact-box">
         <h3>Contact Details</h3>
-        <p>
-          <strong>Email:</strong>
+        <p><strong>Email:</strong>
           <a href="mailto:connect@prathaminvestment.in">
             connect@prathaminvestment.in
           </a>
@@ -85,7 +316,6 @@
 
     </div>
 
-    <!-- MF SECTION (FULL WIDTH) -->
     <div class="mf-section">
       <h2>Mutual Fund Categories – Smart Investing Framework</h2>
       <p class="section-subtitle">
@@ -95,101 +325,66 @@
 
       <div class="mf-grid">
 
-        <!-- LEFT COLUMN -->
         <div>
-
           <div class="premium-card">
             <h4>Large Cap Funds</h4>
-            <p class="mf-desc">
-              Suitable for investors seeking stability and steady long-term growth
-              through well-established companies.
-            </p>
+            <p class="mf-desc">Stability and steady long-term growth.</p>
             <div class="mf-meta">
               <span>Risk: ●●●○○</span>
-              <span>Horizon: 5+ years</span>
+              <span>Horizon: 5+ yrs</span>
             </div>
           </div>
 
           <div class="premium-card">
             <h4>Mid Cap Funds</h4>
-            <p class="mf-desc">
-              Ideal for investors with moderate to high risk appetite aiming
-              for higher growth potential.
-            </p>
+            <p class="mf-desc">Higher growth potential with moderate risk.</p>
             <div class="mf-meta">
               <span>Risk: ●●●●○</span>
-              <span>Horizon: 7+ years</span>
+              <span>Horizon: 7+ yrs</span>
             </div>
           </div>
 
           <div class="premium-card">
             <h4>Flexi Cap Funds</h4>
-            <p class="mf-desc">
-              Dynamic allocation across market caps, adapting to changing
-              market conditions.
-            </p>
+            <p class="mf-desc">Dynamic allocation across market caps.</p>
             <div class="mf-meta">
               <span>Risk: ●●●○○</span>
-              <span>Horizon: 5–7 years</span>
+              <span>Horizon: 5–7 yrs</span>
             </div>
           </div>
-
-          <div class="premium-card">
-            <h4>Multi Cap Funds</h4>
-            <p class="mf-desc">
-              Diversified equity exposure across large, mid and small cap stocks.
-            </p>
-            <div class="mf-meta">
-              <span>Risk: ●●●●○</span>
-              <span>Horizon: 7+ years</span>
-            </div>
-          </div>
-
         </div>
 
-        <!-- RIGHT COLUMN -->
         <div>
-
           <div class="premium-card">
             <h4>Small Cap Funds</h4>
-            <p class="mf-desc">
-              High growth potential with higher volatility, suitable for
-              aggressive long-term investors.
-            </p>
+            <p class="mf-desc">High growth with higher volatility.</p>
             <div class="mf-meta">
               <span>Risk: ●●●●●</span>
-              <span>Horizon: 10+ years</span>
+              <span>Horizon: 10+ yrs</span>
             </div>
           </div>
 
           <div class="premium-card">
             <h4>Multi Asset Funds</h4>
-            <p class="mf-desc">
-              Invest across equity, debt and gold to reduce volatility
-              and improve stability.
-            </p>
+            <p class="mf-desc">Diversification across equity, debt and gold.</p>
             <div class="mf-meta">
               <span>Risk: ●●○○○</span>
-              <span>Horizon: 4–6 years</span>
+              <span>Horizon: 4–6 yrs</span>
             </div>
           </div>
 
           <div class="premium-card">
             <h4>Aggressive Hybrid Funds</h4>
-            <p class="mf-desc">
-              Balanced mix of equity and debt aiming for growth
-              with controlled risk.
-            </p>
+            <p class="mf-desc">Balanced growth with controlled risk.</p>
             <div class="mf-meta">
               <span>Risk: ●●●○○</span>
-              <span>Horizon: 5+ years</span>
+              <span>Horizon: 5+ yrs</span>
             </div>
           </div>
-
         </div>
+
       </div>
 
-      <!-- SIP ILLUSTRATION -->
       <div class="sip-box">
         <h4>Illustrative SIP Example</h4>
         <p>
@@ -200,7 +395,6 @@
         <small>*Illustration only. Actual returns may vary.</small>
       </div>
 
-      <!-- CTA -->
       <div class="mf-cta">
         <a href="mailto:connect@prathaminvestment.in" class="btn-primary">
           Get Personalized Investment Advice
@@ -212,16 +406,13 @@
   </div>
 </section>
 
-<!-- SOURCE -->
 <div class="source-box">
   <div class="container">
-    <strong>Source:</strong>
-    AMFI, Value Research Online, Morningstar India and mutual fund scheme factsheets.
-    Information provided is for educational purposes only.
+    <strong>Source:</strong> AMFI, Value Research Online, Morningstar India.
+    Content is for educational purposes only.
   </div>
 </div>
 
-<!-- DISCLAIMER -->
 <div class="disclaimer">
   <div class="container">
     <strong>Disclaimer:</strong>
@@ -230,7 +421,6 @@
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   © <span id="year"></span> Pratham Investment. All rights reserved.
 </footer>
@@ -241,5 +431,3 @@
 
 </body>
 </html>
-
-
