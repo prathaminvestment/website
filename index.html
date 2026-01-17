@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <title>Pratham Investment - Mutual Fund Distributor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pratham Investment - NISM certified mutual fund distributor. Helping you invest smartly and systematically towards your financial goals." />
+  <meta name="description" content="Pratham Investment - NISM certified mutual fund distributor helping you invest smartly through mutual funds." />
+
   <style>
     * {
       box-sizing: border-box;
@@ -64,11 +65,11 @@
     }
 
     .hero-badges {
-      margin-top: 10px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 10px;
     }
 
     .badge {
@@ -87,12 +88,7 @@
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.95rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    }
-
-    .btn-primary:hover {
-      filter: brightness(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     }
 
     section {
@@ -100,9 +96,9 @@
     }
 
     h2 {
+      text-align: center;
       font-size: 1.5rem;
       margin-bottom: 15px;
-      text-align: center;
       color: #004d4d;
     }
 
@@ -117,39 +113,31 @@
       display: grid;
       grid-template-columns: 1.2fr 1fr;
       gap: 30px;
-      align-items: flex-start;
     }
 
     .card {
       background: #fff;
       border-radius: 12px;
-      padding: 20px 18px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       margin-bottom: 18px;
     }
 
     .card h3 {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       font-size: 1.1rem;
       color: #004d4d;
     }
 
-    .card p {
-      font-size: 0.95rem;
-      color: #444;
-    }
-
     .mf-lines {
       list-style: none;
-      margin-top: 5px;
     }
 
     .mf-lines li {
+      margin-bottom: 10px;
       padding-left: 16px;
       position: relative;
-      margin-bottom: 6px;
       font-size: 0.95rem;
-      color: #333;
     }
 
     .mf-lines li::before {
@@ -163,26 +151,18 @@
       background: #004d4d;
       color: #fff;
       border-radius: 12px;
-      padding: 18px 16px;
-      font-size: 0.95rem;
-    }
-
-    .contact-box p {
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      word-break: break-word;
-    }
-
-    .contact-label {
-      font-weight: bold;
-      min-width: 55px;
+      padding: 18px;
     }
 
     .contact-box a {
       color: #ffd369;
       text-decoration: none;
+    }
+
+    .contact-label {
+      font-weight: bold;
+      min-width: 60px;
+      display: inline-block;
     }
 
     .disclaimer {
@@ -192,16 +172,12 @@
       padding: 20px 15px;
     }
 
-    .disclaimer strong {
-      color: #ffd369;
-    }
-
     footer {
       background: #041919;
       color: #9ca3af;
       text-align: center;
       font-size: 0.78rem;
-      padding: 10px 15px 15px;
+      padding: 12px;
     }
 
     @media (max-width: 768px) {
@@ -212,112 +188,111 @@
       .hero h1 {
         font-size: 1.6rem;
       }
-
-      .hero {
-        padding-top: 40px;
-        padding-bottom: 50px;
-      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="container">
-      <div class="logo">Pratham Investment</div>
+<header>
+  <div class="container">
+    <div class="logo">Pratham Investment</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Your Partner in Smart Mutual Fund Investing</h1>
+    <p>
+      At <span class="hero-highlight">Pratham Investment</span>, I help you invest in mutual funds
+      in a simple, disciplined and goal-based manner.
+    </p>
+
+    <div class="hero-badges">
+      <div class="badge">NISM Certified Mutual Fund Distributor</div>
+      <div class="badge">ARN-342829</div>
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Your Partner in Smart Mutual Fund Investing</h1>
-      <p>
-        At <span class="hero-highlight">Pratham Investment</span>, I help you invest in mutual funds
-        in a simple, disciplined and goal-based manner, so your money works as hard as you do.
-      </p>
-      <div class="hero-badges">
-        <div class="badge">NISM Certified Mutual Fund Distributor</div>
-        <div class="badge">ARN-342829</div>
-      </div>
-      <a href="mailto:connect@prathaminvestment.in" class="btn-primary">Start Your Investment Journey</a>
-    </div>
-  </section>
+    <a href="mailto:connect@prathaminvestment.in" class="btn-primary">
+      Start Your Investment Journey
+    </a>
+  </div>
+</section>
 
-  <section>
-    <div class="container">
-      <h2>Mutual Fund Solutions for Your Goals</h2>
-      <p class="section-subtitle">
-        Whether you are planning for wealth creation, children’s education, or retirement,
-        we help you choose suitable mutual fund schemes as per your risk profile and time horizon.
-      </p>
+<section>
+  <div class="container">
+    <h2>Mutual Fund Solutions for Your Goals</h2>
+    <p class="section-subtitle">
+      Wealth creation, children’s education, retirement or tax planning —
+      invest according to your risk profile and time horizon.
+    </p>
 
-      <div class="grid-2">
+    <div class="grid-2">
 
-        <div>
-          <div class="card">
-            <h3>Why Mutual Funds?</h3>
-            <p>
-              Mutual funds allow you to invest in a diversified portfolio managed by professional fund managers.
-              With options ranging from conservative to aggressive, you can align your investments with your
-              financial goals and risk appetite.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Simple, Disciplined & Goal-Based Investing</h3>
-            <ul class="mf-lines">
-              <li>Invest small amounts regularly through SIPs and build wealth steadily over time.</li>
-              <li>Stay diversified instead of depending on a single stock or product for your future.</li>
-              <li>Choose funds according to your goals – short-term needs, long-term wealth creation, or retirement planning.</li>
-            </ul>
-          </div>
-
-          <!-- Removed the requested 2–3 line section -->
+      <div>
+        <div class="card">
+          <h3>Why Mutual Funds?</h3>
+          <p>
+            Mutual funds offer diversification, professional management and flexibility
+            across different asset classes and risk levels.
+          </p>
         </div>
 
-        <div>
-          <div class="contact-box">
-            <h3 style="margin-bottom:10px; font-size:1rem;">Contact Details</h3>
-            <p>
-              <span class="contact-label">Email:</span>
-              <a href="mailto:connect@prathaminvestment.in">connect@prathaminvestment.in</a>
-            </p>
-            <p>
-              <span class="contact-label">Mobile:</span>
-              <a href="tel:+917567979789">+91 75679 79789</a>
-            </p>
-            <p>
-              <span class="contact-label">ARN:</span>
-              ARN-342829
-            </p>
-            <p>
-              <span class="contact-label">Cert:</span>
-              NISM Certified Mutual Fund Distributor
-            </p>
-          </div>
+        <div class="card">
+          <h3>Simple, Disciplined & Goal-Based Investing</h3>
+          <ul class="mf-lines">
+            <li>Systematic Investment Plans (SIPs) to build long-term wealth</li>
+            <li>Diversification across equity, debt and assets</li>
+            <li>Goal-oriented investing aligned with your life plans</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>5-Year Performance Snapshot (Indicative)</h3>
+          <ul class="mf-lines">
+            <li><strong>Top 5 Large Cap Funds:</strong> ~10% – 13% p.a.</li>
+            <li><strong>Top 5 Mid Cap Funds:</strong> ~14% – 18% p.a.</li>
+            <li><strong>Top 5 Small Cap Funds:</strong> ~16% – 22% p.a.</li>
+            <li><strong>Top 5 Flexi Cap Funds:</strong> ~13% – 17% p.a.</li>
+            <li><strong>Top 5 Multi Cap Funds:</strong> ~14% – 18% p.a.</li>
+            <li><strong>Top 5 Multi Asset Funds:</strong> ~9% – 12% p.a.</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <div class="disclaimer">
-    <div class="container">
-      <p>
-        <strong>Disclaimer:</strong> Mutual fund investments are subject to market risks. Read all scheme related
-        documents carefully before investing.
-      </p>
+      <div>
+        <div class="contact-box">
+          <h3>Contact Details</h3>
+          <p><span class="contact-label">Email:</span>
+            <a href="mailto:connect@prathaminvestment.in">connect@prathaminvestment.in</a>
+          </p>
+          <p><span class="contact-label">Mobile:</span>
+            <a href="tel:+917567979789">+91 75679 79789</a>
+          </p>
+          <p><span class="contact-label">ARN:</span> ARN-342829</p>
+          <p><span class="contact-label">Cert:</span> NISM Certified</p>
+        </div>
+      </div>
+
     </div>
   </div>
+</section>
 
-  <footer>
-    <div class="container">
-      © <span id="year"></span> Pratham Investment. All rights reserved.
-    </div>
-  </footer>
+<div class="disclaimer">
+  <div class="container">
+    <strong>Disclaimer:</strong>
+    Mutual fund investments are subject to market risks. Past performance is not indicative of future returns.
+    The above information is for educational purposes only and does not constitute investment advice.
+  </div>
+</div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer>
+  © <span id="year"></span> Pratham Investment. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
